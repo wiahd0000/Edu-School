@@ -1,0 +1,212 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: "Montserrat", sans-serif;
+}
+
+:root{
+  ---navbar: whitesmoke;
+}
+
+.logo{
+  width: 8rem;
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+background-color: var(---navbar);
+  padding: 1rem 2rem;
+  box-shadow: 2px 2px 1px rgb(226, 214, 214);
+  position: sticky;
+  z-index: 50;
+  top: 0;
+}
+
+nav{
+  display: flex;
+  gap: 2rem;
+}
+
+.head a{
+text-decoration: none;
+font-size: 24px;
+color: darkblue;
+  }
+
+
+
+  .burger{
+    font-size: 1.5rem;
+   display: none;
+   cursor: pointer;
+  }
+
+  .head .login{
+    background-color: darkblue;
+    color: white;
+    padding: 2px 20px;
+    border-radius: 40px;
+  }
+
+  /* home section styling */
+  .hero{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(4, 174, 204, 0.603),rgba(131, 123, 5, 0.726)), url("https://plus.unsplash.com/premium_photo-1663051238732-d6246f747dab?q=80&w=823&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+  }
+
+  .hero h1{
+    color: rgb(186, 235, 10);
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .hero p{
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .hero-img{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .hero-img a{
+    text-decoration: none;
+    background-color: greenyellow;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+  }
+
+  .hero-img a:hover{
+   background: none;
+   border: 1px solid greenyellow;
+   color: white;
+  }
+  /* home section ending */
+
+  /* under home section */
+  .under-home{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h2{
+    text-align: center;
+    color: gray;
+    font-size: 24px;
+  }
+
+  .under-home p{
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  /* why choose us */
+  .choose{
+    padding: 2rem;
+  }
+
+  .card{
+    overflow: hidden;
+    border-radius: 2rem;
+    background-color: rgb(8, 2, 92);
+    overflow: hidden;
+    width: 300px;
+    margin-top: 2rem;
+  }
+
+  .card :hover{
+    scale: 1.01;
+  }
+
+  .card div{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  overflow: hidden;
+  }
+
+  .card img{
+    width: 300px;
+  }
+
+  .choose-text h3{
+    color: greenyellow;
+  }
+
+  .choose-text p{
+    color:  white;
+    font-size: 16px;
+  }
+
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  gap: 1.5rem;
+  }
+
+
+  /* media query */
+@media (max-width: 900px) {
+    nav{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 60px;
+    gap: 10px;
+    text-align: justify;
+    background-color: whitesmoke;
+    width: 100%;
+    right: 0;
+    padding: 1rem 2rem;
+  }
+
+  .head .login{
+   width: 6rem;
+   text-align: center;
+   padding: 4px;
+  }
+
+   .burger{
+    display: flex;
+  }
+
+  nav.active{
+    display: flex;
+  }
+
+    .card-container{
+      display: flex;
+   flex-direction: column;
+   
+  }
+  
+    .card{
+      /* flex-direction: column; */
+    }
+
+
+}
