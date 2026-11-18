@@ -33,7 +33,11 @@ nav{
 .head a{
 text-decoration: none;
 font-size: 24px;
-color: darkblue;
+color: rgba(7, 7, 82, 0.945);
+  }
+
+  .head a:hover{
+    color: rgba(78, 136, 2, 0.801);
   }
 
 
@@ -44,12 +48,7 @@ color: darkblue;
    cursor: pointer;
   }
 
-  .head .login{
-    background-color: darkblue;
-    color: white;
-    padding: 2px 20px;
-    border-radius: 40px;
-  }
+  
 
   /* home section styling */
   .hero{
@@ -168,10 +167,126 @@ color: darkblue;
   gap: 1.5rem;
   }
 
+  /* footer section styling */
+  .foot-section{
+    width: 100%;
+    background-color: rgb(14, 14, 53);
+    padding: 2rem;
+  }
+
+   .footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    justify-items: center;
+
+  }
+
+
+  .quickLinks nav{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 1rem;
+  }
+
+  .quickLinks nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+   .quickLinks nav a:hover{
+    color: greenyellow;
+    font-weight: bold;
+   }
+
+  .quickLinks h3{
+    color: white;
+    font-size: 24px;
+  }
+
+  .socialMediaLinks div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .socialMediaLinks h3{
+    color: white;
+    font-size: 20px;
+  }
+
+   .socialMediaLinks div a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+   }
+
+   .socialMediaLinks div a:hover{
+    color: greenyellow;
+    font-weight: bold;
+   }
+
+  .newLetter{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-top: 2rem;
+  }
+
+  .newLetter h4{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .newLetter input{
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    outline: none;
+    background: none;
+    border: 1px solid greenyellow;
+    color: white;
+
+  }
+
+  textarea{
+   border-radius: 1rem;
+   background: none;
+   outline: none;
+   border:  1px solid greenyellow;
+   text-align: center;
+   align-content: center;
+   color: white;
+   font-size: 18px;
+  }
+
+  .newLetter button{
+    padding: 0.5rem;
+    border-radius: 2rem;
+    background-color: rgba(146, 231, 17, 0.938);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .right{
+    color: white;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+ 
 
   /* media query */
 @media (max-width: 900px) {
-    nav{
+    .head nav{
     display: none;
     position: absolute;
     flex-direction: column;
@@ -203,10 +318,18 @@ color: darkblue;
    flex-direction: column;
    
   }
-  
-    .card{
-      /* flex-direction: column; */
-    }
 
+  /* footer section styling */
+  
+   .footer-container{
+   flex-direction: column;
+   gap: 0.5rem;
+   align-items: center;
+   text-align: center;
+
+  }
+
+  
+  
 
 }
