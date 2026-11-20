@@ -42,22 +42,25 @@ else{
   message.style.color = "green"
   form.reset();
 }
-})
+});
 
 
 // images card slider
+const heroImage = document.getElementById("heroImage");
 
-// const heroImage = document.getElementById("hero-img");
+const images = [
+  "https://i.pinimg.com/736x/bf/75/e3/bf75e3f9dfaac765b1afb2dc3b06b6f2.jpg",
 
-// const image = [
-//   "https://plus.unsplash.com/premium_photo-1663051238732-d6246f747dab?q=80&w=823&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
-// ];
+  "https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98?q=80&w=648&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
 
-// let index = 0;
-// setInterval(()=>{
-//   index++;
-//   if(index >= image.length){
-//     index = 0
-//   }
-// heroImage.src = image[index];
-// }, 5000);
+   "https://plus.unsplash.com/premium_photo-1663051238732-d6246f747dab?q=80&w=823&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+];
+
+let index = 0;
+setInterval(()=>{
+  index++;
+  if(index >= images.length){
+    index = 0;
+  }
+  heroImage.src = images[index]
+}, 5000);
